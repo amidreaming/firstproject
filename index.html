@@ -1378,7 +1378,8 @@
                   Contact Us
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item">  const xatID = document.querySelector('meta[name="xatid"]').content;
+
                 <a href="https://creative-tim.com/about-us" class="nav-link">
                   About Us
                 </a>
@@ -1447,12 +1448,6 @@
     }
   </script>
   <script>
-  const xatID = document.querySelector('meta[name="xatid"]').content;
-  const xatUser = document.querySelector('meta[name="xatuser"]').content;
-  const userinfo = document.querySelector('.userinfo');
-
-  userinfo.innerHTML = `${xatUser} (${xatID})`;
-
   function setStatus(status){
       const currentStatus = document.querySelector('.current-status');
       if (status === 'available') {
