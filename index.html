@@ -67,7 +67,7 @@
             <div class="boxes">
                 <a class="box" target="_blank" href=""></a>
             <div class="status">
-                <h2 class="iam">xat availability: <span class="current-status">[loading]</span></h2>
+                <h2 class="iam">xat availability: <span class="current-status">[checking...]</span></h2>
             </div>
         </div>
         <script>
@@ -81,13 +81,13 @@
                 const currentStatus = document.querySelector('.current-status');
                 if (status === 'available') {
                     currentStatus.classList.add('text-orange');
-                    currentStatus.innerHTML = 'Available';
+                    currentStatus.innerHTML = 'available';
                 } else if (status === 'online') {
                     currentStatus.classList.add('text-green');
-                    currentStatus.innerHTML = 'Online';
+                    currentStatus.innerHTML = 'online';
                 } else {
                     currentStatus.classList.add('text-red');
-                    currentStatus.innerHTML = 'Offline';
+                    currentStatus.innerHTML = 'unavailable';
                 }
             }
 
