@@ -7,7 +7,12 @@
     <body>
         <div id="spotify"></div>
         <div id="discord"></div>
-        <div id="xat">      
+        <div id="xat">  
+            <div class="status">
+                <h2 class="iam">Actually, I am <span class="current-status">[loading]</span></h2>
+            </div>     
+
+            // Code to see if I'm online on xat through Oceanbot.
             <script>
                 const xatID = document.querySelector('meta[name="xatid"]').content;
                 const xatUser = document.querySelector('meta[name="xatuser"]').content;
